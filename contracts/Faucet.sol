@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.22 <0.9.0;
 
-import './Owner.sol';
+import './Destroyable.sol';
 
-contract Faucet is Owner {
+contract Faucet is Destroyable {
 
     event Withdrawal(address indexed to, uint amount);
     event Deposit(address indexed to, uint amount);
@@ -21,9 +21,7 @@ contract Faucet is Owner {
     }
 
     // receive any amount
-    receive() external payable {}
-
-    function destroy() public onlyOwner {
-        selfdestruct(owner);
+    receive() external payable {
+        emit Deposit(msg.sender, msg.value);
     }
 }
