@@ -5,7 +5,7 @@ contract Faucet {
 
     function withdraw(uint amount) public {
         // check that amount is max 0.1 eth
-        require(amount <= 100000000000000000);
+        require(amount <= 0.1 ether);
 
         // sender = the one who triggers the contract
         // this statement transfers the required amount to
