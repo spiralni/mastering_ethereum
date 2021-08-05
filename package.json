@@ -1,0 +1,23 @@
+{
+  "name": "mastering_ethereum",
+  "version": "1.0.0",
+  "description": "Learning ethereum blockchain programming",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spiralni/mastering_ethereum.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spiralni/mastering_ethereum/issues"
+  },
+  "homepage": "https://github.com/spiralni/mastering_ethereum#readme",
+  "devDependencies": {
+    "truffle": "^5.4.3"
+  }
+}
